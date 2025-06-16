@@ -28,5 +28,8 @@ function registerEmail($email) {
     $emails = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     if (!in_array($email, $emails)) {
         file_put_contents($file, $email . PHP_EOL, FILE_APPEND);
+
+        // This is the final submission version
+
     }
 }
